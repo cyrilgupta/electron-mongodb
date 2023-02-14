@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Manager</title>
+
+  <link rel="stylesheet" href="../../assets/css/bulma.min.css" />
+</head>
+<body>
+  <section class="section">
+    <h1 class="title">Employee Manager</h1>
+
+    <div class="box mt-3">
+      <form>
+        <div class="field">
+          <label for="name">Name</label>
+          <input class="input" type="text" id="name" />
+        </div>
+        <div class="field">
+          <label for="position">Position</label>
+          <input class="input" type="text" id="position" />
+        </div>
+        <div class="field">
+          <label for="salary">Salary</label>
+          <input class="input" type="text" id="salary" />
+        </div>
+        <input type="hidden" id="empId" value="" />
+
+        <button class="button is-primary" id="btnGet">Get Employees</button>
+        <button class="button is-primary" id="btnSave">Save Employee</button>
+      </form>
+    </div>
+
+    <div class="box mt-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbEmployees">
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="mainView.js"></script>
+
+</body>
+</html>
